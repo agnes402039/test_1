@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            font-family: "arial";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png")
+        }
+        .container {
+            width: 390px;
+            background-color: #ff9d73;
+            height: 100%;
+        }
+        .photos {
+            margin-top: 30px;
+
+        }
+        .photo-frame {
+            background-color:white;
+            margin: 20px 15px;
+            height: 500px;
+
+            background-size: cover;
+            position: relative;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .f-title {
+            color: white;
+            font-size: 25px;
+            font-weight: 900;
+    
+        }
+        .f-date {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #image1 {
+            background-image: url('./20220819_091721.jpg');
+
+        }
+        #image2 {
+            background-image: url('./20220819_091734.jpg');
+        }
+        #image3 {
+            background-image: url('./20220819_091813.jpg');
+        }
+        #image4 {
+            background-image: url('./20220819_091816.jpg');
+        }
+        
+        .photo_description {
+            color: white;
+            background-color: black;
+
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            
+            transform: translate(-50%);
+            left: 50%
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    화났다
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    화났다구
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    풀어줄게
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    흐이잇
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">쏘뿡이랑 자동차여행</p>
+            <p class="f-date">2022.08.17~2022.09.02</p>
+        </div>
+    </div>    
+</body>
+</html>
